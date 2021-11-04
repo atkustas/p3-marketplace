@@ -98,7 +98,7 @@
 	font-size: 12px;
 	font-weight: 600;
 	margin-bottom: 15px;
-	color: #79818a;
+	color: #b32541;
 	text-transform: uppercase;
 }
 
@@ -133,9 +133,11 @@
 
   	.payment-form .card-details {
     	padding: 40px 40px 30px; 
+		color: #b32541;
     }
 
   	.payment-form .card-details button {
     	margin-top: 2em; 
+		background-color: #b32541;
     } 
 }
