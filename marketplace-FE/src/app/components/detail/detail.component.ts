@@ -9,6 +9,9 @@ export class DetailComponent implements OnInit {
 
   constructor() { }
 
+  descriptionText:string = "placeholder to be changed by some sort of api service or something idk";
+  
+
   ngOnInit(): void {
   }
 
