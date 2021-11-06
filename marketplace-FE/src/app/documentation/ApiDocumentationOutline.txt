@@ -1,0 +1,54 @@
+Methods:
+
+//create
+create              POST "/employees":
+                    Adds an employee to the database
+                    On success: returns 200 OK and the employee as JSON in the format
+                    {
+                        "id": {id},
+                        "name": {name},
+                        "role": {role}
+                    }
+
+
+//read
+list                GET "/employees"
+                    Retrieves a list of all employees from the database
+                    On success: returns 200 OK and a list of employees as JSON in the format
+                    [
+                        {
+                            "id": {id},
+                            "name": {name},
+                            "role": {role}
+                        },
+                        {
+                            "id": {id},
+                            "name": {name},
+                            "role": {role}
+                        }, 
+                        ...
+                    ]
+
+get                 GET "/employees/{id}":
+                    Retrieves the entry corresponding to the specified ID from the database
+                    On success: returns 200 OK and the employee as JSON in the format
+                    {
+                        "id": {id},
+                        "name": {name},
+                        "role": {role}
+                    }
+
+//update
+update              PUT "/employees/{id}":
+                    Updates the specified employee in the database
+                    On success: returns 200 OK and the updated employee as JSON in the format
+                    {
+                        "id": {id},
+                        "name": {name},
+                        "role": {role}
+                    }
+
+//delete
+delete              DELETE "/employees/{id}"
+                    Removes the employee with the specified ID from the database
+                    On success: returns 200 OK with an empty response body
