@@ -3,6 +3,7 @@
    cursor: pointer;
    transform:scale(1.02);
    text-decoration: none;
+   color: black;
 }
 
 .card{
@@ -22,7 +23,7 @@
     
 }
  .sidebar{
-     background-color:rgba(121, 128, 121, 0.952);
+     background-color:rgba(239, 243, 239, 0.952);
      float: left;
      height: 100vh;
      

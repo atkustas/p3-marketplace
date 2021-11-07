@@ -4,6 +4,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProductmenuComponent } from './components/productmenu/productmenu.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: "",
     component: DetailComponent
+  },
+  {
+    path: "product",
+    component: ProductmenuComponent
   }
  
 ];
