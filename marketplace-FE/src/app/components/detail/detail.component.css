@@ -1,0 +1,30 @@
+.card:hover{
+   box-shadow: 2px 2px 4px black;
+   cursor: pointer;
+   transform:scale(1.02);
+   text-decoration: none;
+}
+
+.card{
+    margin: 0.5em;
+    display:inline-flex;
+    
+    transition: all 0.1s ease;
+    flex-wrap: wrap;
+   
+    
+}
+
+.container{
+    align-items: end;
+    justify-content: end;
+    
+    
+}
+ .sidebar{
+     background-color:rgba(121, 128, 121, 0.952);
+     float: left;
+     height: 100vh;
+     
+    
+ }

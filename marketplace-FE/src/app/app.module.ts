@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { CartComponent } from './cart/cart.component';
-import { CheckoutComponent } from './checkout/checkout.component';
-import { ProductmenuComponent } from './productmenu/productmenu.component';
-import { DetailComponent } from './detail/detail.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { CartComponent } from './components/cart/cart.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { ProductmenuComponent } from './components/productmenu/productmenu.component';
+import { DetailComponent } from './components/detail/detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({

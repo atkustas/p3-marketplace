@@ -1,0 +1,34 @@
+<div class="container sidebar col-2">
+  
+ <p>THIS IS THE SIDE BAR</p>
+ <p>THIS IS THE SIDE BAR</p>
+ <p>THIS IS THE SIDE BAR</p>
+ <p>THIS IS THE SIDE BAR</p>
+ <p>THIS IS THE SIDE BAR</p>
+ <p>THIS IS THE SIDE BAR</p>
+</div>
+
+<div class="container col-10">
+<div (click)="cardFunc()" class="card" style="width: 18rem;">
+  <a [href]="myLink"> <img class="card-img-top" src="assets/helloworld.png" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</a>
+</div>
+
+
+  
+  
+  <div [innerHtml]="htmlToAdd" class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+
+  
+</div>
