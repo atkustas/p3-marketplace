@@ -1,1 +1,20 @@
-<p>detail works!</p>
+<div class = "content">
+    <div class = "left">
+
+        <br>
+        <br>     
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a [routerLink] = "[ '/detail/introduction' ]" routerLinkActive = "active">API Introduction</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a [routerLink] = "[ '/detail/verification' ]" routerLinkActive = "active">API Verification</a>
+
+    </div>
+
+    <div class = "right">
+        <router-outlet></router-outlet>
+
+    </div>
+
+</div>
