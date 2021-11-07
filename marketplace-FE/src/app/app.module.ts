@@ -8,6 +8,10 @@ import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ProductmenuComponent } from './components/productmenu/productmenu.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { HttpClientModule} from '@angular/common/http'
+import { SocialAuthServiceConfig, SocialLoginModule } from 'angularx-social-login';
+import { GoogleLoginProvider } from 'angularx-social-login';
+
 
 @NgModule({
   declarations: [
@@ -20,9 +24,27 @@ import { DetailComponent } from './components/detail/detail.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    SocialLoginModule
   ],
-  providers: [],
+  providers: [
+    {
+      //Confifuration for SocialLoginModule with client ID from GCP
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers:[
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(
+              "859187453401-d49epm15k5mihmsof5isdki2v2qf80ro.apps.googleusercontent.com"
+            )
+          }
+        ]
+      } as SocialAuthServiceConfig,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
