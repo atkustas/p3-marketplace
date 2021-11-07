@@ -1,20 +1,21 @@
-<div class="container sidebar col-2">
-  
- <p>THIS IS THE SIDE BAR</p>
- <p>THIS IS THE SIDE BAR</p>
- <p>THIS IS THE SIDE BAR</p>
- <p>THIS IS THE SIDE BAR</p>
- <p>THIS IS THE SIDE BAR</p>
- <p>THIS IS THE SIDE BAR</p>
-</div>
+<div class = "content">
+    <div class = "left">
 
-<div class="container col-10">
-<div (click)="cardFunc()" class="card" style="width: 18rem;">
-  <a [href]="myLink"> <img class="card-img-top" src="assets/helloworld.png" alt="Card image cap">
-  <div class="card-body">
-    <h3>Hello World</h3>
-    <p class="card-text">Simple hello world example</p>
-  </div>
-</a>
-</div>  
+        <br>
+        <br>     
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a [routerLink] = "[ '/detail/introduction' ]" routerLinkActive = "active">API Introduction</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a [routerLink] = "[ '/detail/verification' ]" routerLinkActive = "active">API Verification</a>
+
+    </div>
+
+    <div class = "right">
+        <router-outlet></router-outlet>
+
+    </div>
+
+
 </div>

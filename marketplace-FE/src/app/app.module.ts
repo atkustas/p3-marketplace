@@ -9,6 +9,9 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ProductmenuComponent } from './components/productmenu/productmenu.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { IntroductionComponent } from './components/detail/introduction/introduction.component';
+import { VerificationComponent } from './components/detail/verification/verification.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CartComponent,
     CheckoutComponent,
     ProductmenuComponent,
-    DetailComponent
+    DetailComponent,
+    IntroductionComponent,
+    VerificationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule
+    NgbModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

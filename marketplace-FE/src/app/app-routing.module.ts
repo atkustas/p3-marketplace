@@ -5,6 +5,8 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProductmenuComponent } from './components/productmenu/productmenu.component';
+import { IntroductionComponent } from './components/detail/introduction/introduction.component';
+import { VerificationComponent } from './components/detail/verification/verification.component';
 
 const routes: Routes = [
   {
@@ -17,10 +19,6 @@ const routes: Routes = [
   },
 
   {
-    path: "detail",
-    component: DetailComponent
-  },
-  {
     path: "",
     component: DetailComponent
   },
@@ -28,7 +26,35 @@ const routes: Routes = [
     path: "product",
     component: ProductmenuComponent
   }
- 
+
+  {
+    path: "checkout",
+    component: CheckoutComponent
+  },
+  {
+    path: "detail",
+    component: DetailComponent,
+    children:[
+      {
+        path: "introduction",
+        component: IntroductionComponent
+      },
+      {
+        path: "verification",
+        component: VerificationComponent
+      }
+      ,
+      {
+        path: "**",
+        redirectTo: 'introduction'
+      }
+    ]
+  },
+  {
+    path: "navbar",
+    component: NavbarComponent
+  }
+
 ];
 
 @NgModule({
