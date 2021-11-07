@@ -27,7 +27,7 @@ import { VerificationComponent } from './components/detail/verification/verifica
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
     NgbModule,
     AppRoutingModule,
   ],
