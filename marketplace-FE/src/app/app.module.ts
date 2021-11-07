@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { IntroductionComponent } from './components/detail/introduction/introduction.component';
 import { VerificationComponent } from './components/detail/verification/verification.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { VerificationComponent } from './components/detail/verification/verifica
     ProductmenuComponent,
     DetailComponent,
     IntroductionComponent,
-    VerificationComponent
+    VerificationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

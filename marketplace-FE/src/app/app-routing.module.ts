@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProductmenuComponent } from './components/productmenu/productmenu.component';
 import { IntroductionComponent } from './components/detail/introduction/introduction.component';
 import { VerificationComponent } from './components/detail/verification/verification.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
@@ -20,7 +21,11 @@ const routes: Routes = [
 
   {
     path: "",
-    component: DetailComponent
+    component: HomeComponent
+  },
+  {
+    path: "home",
+    component: HomeComponent
   },
   {
     path: "product",
