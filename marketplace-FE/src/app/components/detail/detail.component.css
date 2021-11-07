@@ -1,3 +1,36 @@
+
+.card:hover{
+   box-shadow: 2px 2px 4px black;
+   cursor: pointer;
+   transform:scale(1.02);
+   text-decoration: none;
+   color: black;
+}
+
+.card{
+    margin: 0.5em;
+    display:inline-flex;
+    
+    transition: all 0.1s ease;
+    flex-wrap: wrap;
+   
+    
+}
+
+.container{
+    align-items: end;
+    justify-content: end;
+    
+    
+}
+ .sidebar{
+     background-color:rgba(239, 243, 239, 0.952);
+     float: left;
+     height: 100vh;
+     
+    
+ }
+
 .content{
     width: 100%;
 
