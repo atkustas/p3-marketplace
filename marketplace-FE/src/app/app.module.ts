@@ -8,6 +8,10 @@ import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { ProductmenuComponent } from './components/productmenu/productmenu.component';
 import { DetailComponent } from './components/detail/detail.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { IntroductionComponent } from './components/detail/introduction/introduction.component';
+import { VerificationComponent } from './components/detail/verification/verification.component';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { DetailComponent } from './components/detail/detail.component';
     CartComponent,
     CheckoutComponent,
     ProductmenuComponent,
-    DetailComponent
+    DetailComponent,
+    IntroductionComponent,
+    VerificationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    NgbModule,
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

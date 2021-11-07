@@ -1,12 +1,40 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { DetailComponent } from './components/detail/detail.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { IntroductionComponent } from './components/detail/introduction/introduction.component';
+import { VerificationComponent } from './components/detail/verification/verification.component';
+
 
 const routes: Routes = [
 
   {
     path: "checkout",
     component: CheckoutComponent
+  },
+  {
+    path: "detail",
+    component: DetailComponent,
+    children:[
+      {
+        path: "introduction",
+        component: IntroductionComponent
+      },
+      {
+        path: "verification",
+        component: VerificationComponent
+      }
+      ,
+      {
+        path: "**",
+        redirectTo: 'introduction'
+      }
+    ]
+  },
+  {
+    path: "navbar",
+    component: NavbarComponent
   }
 
 ];
