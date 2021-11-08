@@ -10,15 +10,18 @@ import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/n
 export class HomeComponent implements OnInit {
   
   //urls for images in the carousel
-  images:string[] = ["hello", "world"]; //to be filled with business-y stock photos, maybe 3-5
+  images:string[] = ["assets/money.jpg", "assets/pointingatalaptop.jpg"]; //to be filled with business-y stock photos, maybe 3-5
+  //all images taken from pexels.com
+  
   //flags used to control caroulel params
   private paused:boolean = false;
   private unpauseOnArrow:boolean = false;
   private pauseOnIndicator:boolean = false;
   private pauseOnHover:boolean = true;
   private pauseOnFocus = true;
-  descriptions:string[] = ["foo", "bar"];
-  testing:string[] = ["success"]
+  descriptionTitles:string[] = ["foo", "bar"];
+  descriptionsCaptions:string[] = ["foo", "bar"]
+  
 
   //@ViewChild('carousel', {static : true}) carousel:NgbCarousel;
 carousel:any = null;

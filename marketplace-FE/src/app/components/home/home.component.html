@@ -2,5 +2,19 @@
   <div class="container sidebar col-8" id = "textContainer">
     <h1>{{testing[0]}}</h1>
   </div>
-  
+
+  <div class="container col-4" id = "carouselContainer">
+    <ngb-carousel>
+      <ng-template ngbSlide *ngFor = "let img of images; index as i">
+        <div id = caption class="carousel-caption">
+          <h4>{{descriptions[i]}}</h4>
+        </div>
+        <a routerLink = "/productmenu"> 
+          <div class = "picsum-img-wrapper">
+            <img [src] = "img" alt = "descriptions[i]">
+          </div>
+        </a>
+      </ng-template>
+    </ngb-carousel>
+  </div>
 </div>
