@@ -12,6 +12,10 @@ import { HttpClientModule} from '@angular/common/http'
 import { SocialAuthServiceConfig, SocialLoginModule } from 'angularx-social-login';
 import { GoogleLoginProvider } from 'angularx-social-login';
 
+const googleLoginOptions = {
+  scope: 'https://www.googleapis.com/auth/cloud-platform'
+};
+
 
 @NgModule({
   declarations: [
@@ -38,7 +42,7 @@ import { GoogleLoginProvider } from 'angularx-social-login';
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              "859187453401-d49epm15k5mihmsof5isdki2v2qf80ro.apps.googleusercontent.com"
+              "859187453401-d49epm15k5mihmsof5isdki2v2qf80ro.apps.googleusercontent.com", googleLoginOptions
             )
           }
         ]
