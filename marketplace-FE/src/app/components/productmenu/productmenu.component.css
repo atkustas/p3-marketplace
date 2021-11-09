@@ -23,11 +23,14 @@
      justify-content: end;
 
      margin-top: 2px;
-
-     
-     
-     
+      
  }
+
+ a {
+    text-decoration: none;  
+    color:black
+ }
+
   .sidebar{
       background-color:rgba(48, 44, 42, 0.952);
       float: left;
