@@ -1,19 +1,18 @@
-
-  <div class="container sidebar col-8" id = "textContainer">
-    <ngb-carousel #carousel [interval] = "2000" [pauseOnHover] = "pauseOnHover" [pauseOnFocus] = "pauseOnFocus" (slide) = "onSlide($event)">
-      <ng-template ngbSlide *ngFor = "let img of images; index as i">
-        <div id = caption class="carousel-caption">
-          <h4>{{descriptionTitles[i]}}</h4>
-        </div>
-        <a routerLink = "/productmenu"> 
-          <div class = "picsum-img-wrapper">
-            <img [src] = "img" alt = "descriptionCaptions[i]">
-          </div>
-        </a>
-      </ng-template>
-    </ngb-carousel>
+<div id = pageContents>
+  <div class="container" id = "carouselContainer">
+    <div style="width: 1000px; height: 1000px;">
+      <carousel [noWrap]="noWrapSlides" [showIndicators]="showIndicator">
+        <slide *ngFor="let image of images; index as i">
+            <img [src]= image alt="image slide" style="display: block; width: 100%;">
+            <div class="carousel-caption">
+              <h4>{{descriptionTitles[i]}}</h4>
+              <p>{{descriptionCaptions[i]}}</p>
+            </div>
+        </slide>
+      </carousel>
   </div>
-<!--
+ </div>
+<!-- ngBootstrap carousel
   <div class="container col-4" id = "carouselContainer">
     <ngb-carousel #carousel [interval] = "2000" [pauseOnHover] = "pauseOnHover" [pauseOnFocus] = "pauseOnFocus" (slide) = "onSlide($event)">
       <ng-template ngbSlide *ngFor = "let img of images; index as i">
@@ -28,3 +27,4 @@
       </ng-template>
     </ngb-carousel>
   </div>-->
+</div>
