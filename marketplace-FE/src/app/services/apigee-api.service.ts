@@ -23,4 +23,8 @@ export class ApigeeApiService {
     console.log(this.token)
     return this.http.post(this.devUrl, this.testDev, {headers:{'Authorization': "Bearer " + this.token}})
   }
+
+  getAPIProductList(){
+    
+  }
 }
