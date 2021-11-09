@@ -6,7 +6,7 @@ import { CarouselConfig } from 'ngx-bootstrap/carousel';
   selector: 'app-home',
   templateUrl: './home.component.html',
   providers: [
-    { provide: CarouselConfig, useValue: { interval: 3000, noPause: false, showIndicators: true } }
+    { provide: CarouselConfig, useValue: { interval: 4000, noPause: false, showIndicators: true } }
     ],
   styleUrls: ['./home.component.css']
 })

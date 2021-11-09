@@ -7,12 +7,28 @@
    </div>
    
    <div class="container col-10">
-   <div (click)="cardFunc()" class="card" style="width: 18rem;">
-     <a [href]="myLink"> <img class="card-img-top" src="assets/helloworld.png" alt="Card image cap">
+   <div (click)="cardFunc1()" class="card" style="width: 18rem;">
+     <a [href]="myLink1"> <img class="card-img-top" src="assets/helloworld.png" alt="Card image cap"></a>
      <div class="card-body">
-       <h3>Hello World</h3>
+       <h5>Hello World</h5>
        <p class="card-text">Simple hello world example</p>
      </div>
-   </a>
+   
    </div>  
+   <div (click)="cardFunc2()" class="card" style="width: 18rem;">
+    <a [href]="myLink2"> <img class="card-img-top" src="assets/hello.png" alt="Card image cap"></a>
+    <div class="card-body">
+      <h5>Hello World - Deployed</h5>
+      <p class="card-text">Outputs Hello World</p>
+    </div>
+  
+  </div>
+  <div (click)="cardFunc3()" class="card" style="width: 18rem;">
+    <a [href]="myLink3"> <img class="card-img-top" src="assets/welcome.jpg" alt="Card image cap"></a>
+    <div class="card-body">
+      <h5>Welcome</h5>
+      <p class="card-text">Greets user to the Equifax Developer Portal</p>
+    </div>
+  
+  </div>
    </div>

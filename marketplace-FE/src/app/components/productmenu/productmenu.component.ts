@@ -10,13 +10,21 @@ import { Component, OnInit } from '@angular/core';
 
 export class ProductmenuComponent implements OnInit {
 
-  myLink: String = "";
+  myLink1: String = "";
+  myLink2: String = "";
+  myLink3: String = "";
   htmlToAdd: any;
     
-  cardFunc(){
-    this.myLink = "https://javagcp210907-ak-marketplace.apigee.io/docs/hello-world/1/overview";
+  cardFunc1(){
+    this.myLink1 = "https://javagcp210907-ak-marketplace.apigee.io/docs/hello-world/1/overview";
       }
+cardFunc2(){
+  this.myLink2 = "https://javagcp210907-ak-marketplace.apigee.io/docs/hello-world---deployed/1/overview"
+}
 
+cardFunc3(){
+  this.myLink3 = "https://javagcp210907-ak-marketplace.apigee.io/docs/welcome/1/overview"
+}
   ngOnInit(): void {
 
     this.htmlToAdd = `<div (click)="cardFunc()" class="card" style="width: 18rem;">

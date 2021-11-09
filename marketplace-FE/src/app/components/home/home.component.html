@@ -3,15 +3,22 @@
     <div id="carasoul">
       <carousel [noWrap]="noWrapSlides" [showIndicators]="showIndicator">
         <slide *ngFor="let image of images; index as i">
+          <a routerLink = "/product"> 
             <img [src]= image alt="image slide" >
+         
             <div class="carousel-caption">
               <h4>{{descriptionTitles[i]}}</h4>
               <p>{{descriptionCaptions[i]}}</p>
             </div>
+
+          </a>
         </slide>
       </carousel>
   </div>
  </div>
+ 
+
+
  
 <!-- ngBootstrap carousel
   <div class="container col-4" id = "carouselContainer">
