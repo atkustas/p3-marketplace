@@ -11,11 +11,16 @@ import { DetailComponent } from './components/detail/detail.component';
 import { HttpClientModule} from '@angular/common/http'
 import { SocialAuthServiceConfig, SocialLoginModule } from 'angularx-social-login';
 import { GoogleLoginProvider } from 'angularx-social-login';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { IntroductionComponent } from './components/detail/introduction/introduction.component';
+import { VerificationComponent } from './components/detail/verification/verification.component';
+import { HomeComponent } from './components/home/home.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 const googleLoginOptions = {
   scope: 'https://www.googleapis.com/auth/cloud-platform'
 };
-
 
 @NgModule({
   declarations: [
@@ -24,13 +29,19 @@ const googleLoginOptions = {
     CartComponent,
     CheckoutComponent,
     ProductmenuComponent,
-    DetailComponent
+    DetailComponent,
+    IntroductionComponent,
+    VerificationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SocialLoginModule
+    SocialLoginModule,
+    BrowserAnimationsModule,
+    NgbModule,
+    CarouselModule
   ],
   providers: [
     {
@@ -48,6 +59,7 @@ const googleLoginOptions = {
         ]
       } as SocialAuthServiceConfig,
     }
+    
   ],
   bootstrap: [AppComponent]
 })

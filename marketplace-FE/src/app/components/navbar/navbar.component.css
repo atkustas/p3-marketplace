@@ -1,0 +1,24 @@
+.navbar{
+    background-color: #981E32;  
+}
+
+.nav-link{
+    margin-left: 20px;
+}
+.nav-link:hover{
+    background-color: brown;
+    border-radius: 18px;
+    
+}
+
+.navbar img{
+    height: 50px;
+    width: 80px;
+}
+#navbarSupportedContent{
+    float:left
+}
+
+.dropdown-menu{
+    display:block;
+}
