@@ -38,7 +38,8 @@ const routes: Routes = [
     component: CheckoutComponent
   },
 
-  { path: "login", component: LoginComponent}
+  { path: "login",
+    component: LoginComponent},
 
   {
     path: "detail",

@@ -53,7 +53,7 @@ const googleLoginOptions = {
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              "859187453401-d49epm15k5mihmsof5isdki2v2qf80ro.apps.googleusercontent.com", googleLoginOptions
+              "242232238139-q850t2k48src6lfk0m9ptl1rrmmjl46m.apps.googleusercontent.com", googleLoginOptions
             )
           }
         ]

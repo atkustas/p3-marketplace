@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class ApigeeApiService {
 
   token = localStorage.getItem('token') as string;
-  devUrl: string = "https://apigee.googleapis.com/v1/organizations/apitest-331313/developers"
+  devUrl: string = "https://apigee.googleapis.com/v1/organizations/javagcp210907-ak/developers"
   testDev = {
     "email": "chapman.kevinb@gmail.com",
     "firstName": "Kevin",
