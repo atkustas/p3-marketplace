@@ -34,6 +34,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     NgbModule,
     AppRoutingModule,
+    NgbCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
