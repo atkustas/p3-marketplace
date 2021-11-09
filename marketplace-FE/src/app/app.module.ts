@@ -13,6 +13,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { IntroductionComponent } from './components/detail/introduction/introduction.component';
 import { VerificationComponent } from './components/detail/verification/verification.component';
 import { HomeComponent } from './components/home/home.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,8 @@ import { HomeComponent } from './components/home/home.component';
     BrowserAnimationsModule,
     NgbModule,
     AppRoutingModule,
+
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

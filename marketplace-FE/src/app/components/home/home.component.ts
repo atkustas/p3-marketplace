@@ -1,28 +1,40 @@
 import { Component, OnInit } from '@angular/core';
+import { CarouselConfig } from 'ngx-bootstrap/carousel';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
+  providers: [
+    { provide: CarouselConfig, useValue: { interval: 4000, noPause: false, showIndicators: true } }
+    ],
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  myLink: String = "";
-  htmlToAdd: any;
   
-  cardFunc(){
-this.myLink = "https://javagcp210907-ak-marketplace.apigee.io/docs/hello-world/1/overview";
-  }
+  //urls for images in the carousel
+  images:string[] = ["assets/money.jpg", "assets/presentation.jpg", "assets/twopeopleworking.jpg", 
+                     "assets/pointingatalaptop.jpg"];
+  
+  
+  noWrapSlides:boolean = false;
+  showIndicator = true;
+  //Titles for APIs
+  descriptionTitles:string[] = ["Account Verification", "Alternative Employment and Income Data",
+                                "Automated Data View", "Consumer Credit Report"];
+  //descriptions of the APIs
+  descriptionCaptions:string[] = ["Authenticate account numbers presented by consumers", 
+                                   "Consumer-provided employment and income information",
+                                   "Audit the quality of customer’s data stored in the Equifax files",
+                                   "Delivers better predictive consumer data for fast, well-informed decisions"];
+  
+  
+                                   
+
   constructor() { }
 
   ngOnInit(): void {
 
-    this.htmlToAdd = `<div (click)="cardFunc()" class="card" style="width: 18rem;">
-    <a [href]="myLink"> <img class="card-img-top" src="assets/helloworld.png" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </a>
-  </div>`
   }
 
 }

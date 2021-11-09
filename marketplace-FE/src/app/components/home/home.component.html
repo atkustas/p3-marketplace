@@ -1,18 +1,38 @@
-<div class="container sidebar col-2">
-  
-    <form class="form-inline my-2 my-lg-0" >
-        <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="submit">Search</button>
-      </form>
-   </div>
-   
-   <div class="container col-10">
-   <div (click)="cardFunc()" class="card" style="width: 18rem;">
-     <a [href]="myLink"> <img class="card-img-top" src="assets/helloworld.png" alt="Card image cap">
-     <div class="card-body">
-       <h3>Hello World</h3>
-       <p class="card-text">Simple hello world example</p>
-     </div>
-   </a>
-   </div>  
-   </div>
+<div id = "container">
+  <div id = "carouselContainer">
+    <div id="carasoul">
+      <carousel [noWrap]="noWrapSlides" [showIndicators]="showIndicator">
+        <slide *ngFor="let image of images; index as i">
+          <a routerLink = "/product"> 
+            <img [src]= image alt="image slide" >
+         
+            <div class="carousel-caption">
+              <h4>{{descriptionTitles[i]}}</h4>
+              <p>{{descriptionCaptions[i]}}</p>
+            </div>
+
+          </a>
+        </slide>
+      </carousel>
+  </div>
+ </div>
+ 
+
+
+ 
+<!-- ngBootstrap carousel
+  <div class="container col-4" id = "carouselContainer">
+    <ngb-carousel #carousel [interval] = "2000" [pauseOnHover] = "pauseOnHover" [pauseOnFocus] = "pauseOnFocus" (slide) = "onSlide($event)">
+      <ng-template ngbSlide *ngFor = "let img of images; index as i">
+        <div id = caption class="carousel-caption">
+          <h4>{{descriptionTitles[i]}}</h4>
+        </div>
+        <a routerLink = "/productmenu"> 
+          <div class = "picsum-img-wrapper">
+            <img [src] = "img" alt = "descriptionCaptions[i]">
+          </div>
+        </a>
+      </ng-template>
+    </ngb-carousel>
+  </div>-->
+</div>
