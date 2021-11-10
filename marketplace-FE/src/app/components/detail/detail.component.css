@@ -54,6 +54,6 @@
 }
 
 .active{
-    background-color: #981E32;
-    color: #fff;
+    
+    text-decoration: underline #981E32;
 }
