@@ -1,29 +1,39 @@
 <div class="container">
-    <h1>API Verification</h1>
+    <h1>API Verification</h1> 
   
     <section id="sec1">
-      <h2>Section 1</h2>
+      <h2>Environments</h2>
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-8">
+          <p class="text-start">Hello World API operates in two separate environments: eval and production.</p>
           <ul>
-            <li><a href="#">Authentication</a></li>
-            <br>
-            <br>
-            <li><a href="#">Environments</a></li>
-            <br>
-            <br>
-            <li><a href="#">Create a template</a></li>
-            <br>
-            <br>
+            <li>The eval environment returns mock data and is designed for testing the basic functionality of the API.
+              <p class="text-start">&nbsp;&nbsp;API environment URL: </p>
+            </li>            
+            <li>The production environment lets retrieve data from real accounts connected via Hello World Link.</li>
           </ul>
         </div>
       </div>
     </section>
+     
 
     <section id="sec2">
+      <h2>Authentication</h2>
+      <div class="alert alert-danger" role="alert">
+        Tip:If you already are a client of Hello World, you can click "Go to verify" above. Otherwise, please go to "sign in" to Create account and use our test environment for free.
+     </div>
+
+
+
+    </section>   
+
+    <section id="sec3">
   
-      <h2>Section 2</h2>
-      <h4  style="color:#981E32">Request Parameters </h4>
+      <h2>API interfaces</h2>
+      <br>
+      <h6>Request methods: GET </h6>
+      <h6>Request url: https://mocktarget.apigee.net </h6>
+      <h6>Request Parameters </h6>
       <table class="table">
         <thead>
           <tr>
@@ -35,75 +45,69 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Username</th>
-            <td>String</td>
+            <th scope="row">user</th>
+            <td>string</td>
             <td>Yes</td>
-            <td>The name of user</td>
-          </tr>
-          <tr>
-            <th scope="row">Middle name</th>
-            <td>String</td>
-            <td>No</td>
-            <td>Middle name of the user</td>
+            <td>Your user name</td>
           </tr>
         </tbody>
       </table>
-
-      <br>
-      <br>
-
-      <h4  style="color:#981E32">Response information </h4>
+      <h6>Response information </h6>
       <table class="table">
         <thead>
           <tr>
             <th scope="col">Status code</th>
-            <th scope="col">Response item</th>
             <th scope="col">Description</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td>404</td>
-            <td>Error message</td>
-            <td>Request failed</td>
+            <th scope="row">200</th>
+            <td>Success</td>
           </tr>
         </tbody>
       </table>
+      <div class="row">
+        <div class="col-md-8">
+          <h4>Success page</h4>
+          <div class="box"> 
+            <img src="assets/helloworldapi/url_suc.png" alt="image">
+          </div>
+        </div>
+      </div>
+      
+
       <br>
-    </section>
-    <section id="sec3">
-  
-      <h2>Section 3</h2>
+      <br>
+      <h6>Request methods: GET </h6>
+      <h6>Request url: https://mocktarget.apigee.net/auth </h6>
+      <h6>Request Parameters: No </h6>
+      <h6>Response information </h6>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Status code</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">200</th>
+            <td>Success</td>
+          </tr>
+          <tr>
+            <th scope="row">401</th>
+            <td>Access failed</td>
+          </tr>
+        </tbody>
+      </table>
       <div class="row">
-        <div class="col-md-3">
-            <p>To display code: </p>
-
-            <pre>
-               &lt;article&gt;
-                  &lt;h1&gt;Art&lt;/h1&gt;
-               &lt;/article&gt;
-
-            </pre>
+        <div class="col-md-8">
+          <h4>Failed page</h4>
+          <div class="box"> 
+            <img src="assets/helloworldapi/url_auth_fail.png" alt="image">
+          </div>
         </div>
       </div>
     </section>
-    <section id="sec4">
-      <h2>Section 4</h2>
-      <div class="row">
-        <div class="col-md-3">
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <ul>
-            <li><a href="#">Home</a></li>
 
-  
-          </ul>
-        </div>
-      </div>
-    </section> 
-  </div>

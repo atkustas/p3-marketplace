@@ -11,4 +11,6 @@ section {
     border: none;
   }
 
-  
+img { 
+  object-fit: contain;
+}
