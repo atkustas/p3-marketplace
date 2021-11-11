@@ -22,7 +22,7 @@
  .sidebar{
      background-color:rgba(239, 243, 239, 0.952);
      float: left;
-     height: 100vh;
+     height: 100%;
  }
 
 .content{
@@ -56,3 +56,15 @@
     font-size: 16px;
     border-radius: 12px;
 }
+
+@media (max-width: 1000px){
+   
+    .content .left{
+       /* display: none; */
+       z-index: 1;
+    }
+
+    .content{
+        z-index: 2;
+    }
+    }
