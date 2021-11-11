@@ -16,8 +16,9 @@
 }
 
 .navbar img{
-    height: 40px;
-    width: 156px;
+    height: 45px;
+    width: 179px;
+    margin-left: 60px;
 }
 #navbarSupportedContent{
     float: left;
