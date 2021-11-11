@@ -9,7 +9,7 @@ import { ProductmenuComponent } from './components/productmenu/productmenu.compo
 import { IntroductionComponent } from './components/detail/introduction/introduction.component';
 import { VerificationComponent } from './components/detail/verification/verification.component';
 import { HomeComponent } from './components/home/home.component';
-import { TermsComponent } from './terms/terms.component';
+import { ConditionsComponent } from './components/conditions/conditions.component';
 
 const routes: Routes = [
   {
@@ -49,8 +49,8 @@ const routes: Routes = [
   },
 
   {
-    path: "terms",
-    component: TermsComponent
+    path: "conditions",
+    component: ConditionsComponent
   },
 
   { path: "login",

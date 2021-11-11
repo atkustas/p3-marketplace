@@ -12,13 +12,13 @@ import { HttpClientModule} from '@angular/common/http'
 import { SocialAuthServiceConfig, SocialLoginModule } from 'angularx-social-login';
 import { GoogleLoginProvider } from 'angularx-social-login';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { IntroductionComponent } from './components/detail/introduction/introduction.component';
 import { VerificationComponent } from './components/detail/verification/verification.component';
 import { HomeComponent } from './components/home/home.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { NavbarlowComponent } from './navbarlow/navbarlow.component';
-import { TermsComponent } from './terms/terms.component';
+import { Navbar2Component } from './components/navbar2/navbar2.component';
+import { ConditionsComponent } from './components/conditions/conditions.component';
 
 const googleLoginOptions = {
   scope: 'https://www.googleapis.com/auth/cloud-platform'
@@ -35,8 +35,8 @@ const googleLoginOptions = {
     IntroductionComponent,
     VerificationComponent,
     HomeComponent,
-    NavbarlowComponent,
-    TermsComponent
+    Navbar2Component,
+    ConditionsComponent
   ],
   imports: [
     BrowserModule,
