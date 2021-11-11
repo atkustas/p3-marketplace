@@ -1,5 +1,9 @@
 .navbar{
-    background-color: #981E32;  
+    background-color: #981E32;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 .nav-link{
@@ -15,7 +19,7 @@
     width: 80px;
 }
 #navbarSupportedContent{
-    float:left
+    float: left;
 }
 
 .dropdown-menu{
