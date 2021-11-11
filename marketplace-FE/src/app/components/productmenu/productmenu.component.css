@@ -1,21 +1,17 @@
 .card:hover{
     box-shadow: 2px 2px 4px black;
-    
     transform:scale(1.02);
     text-decoration: none;
     color: black;
  }
  
  .card{
-     margin: 0.5em;
-     display:inline-flex;
-     
-     transition: all 0.1s ease;
-     flex-wrap: wrap;
-
-     height: 300px;
-    
-     
+    margin: 0.5em;
+    display:inline-flex;
+    transition: all 0.1s ease;
+    flex-wrap: wrap;
+    cursor: pointer;
+    height: 300px;
  }
  
  .container{
