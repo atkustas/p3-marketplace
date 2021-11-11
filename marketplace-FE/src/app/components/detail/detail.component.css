@@ -45,7 +45,7 @@
 
     border-right: 1px solid rgb(58, 56, 56);
 
-    height: 1500px;
+    height: 3000px;
 
 }
 
@@ -54,6 +54,6 @@
 }
 
 .active{
-    background-color: #981E32;
-    color: #fff;
+    
+    text-decoration: underline #981E32;
 }

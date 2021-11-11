@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ApigeeApiService } from 'src/app/services/apigee-api.service';
+
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api: ApigeeApiService) {}
 
   ngOnInit(): void {
+
+    this.api.createDeveloper().subscribe(
+      (res: any) => 
+        console.log(res)
+    )
   }
 
 }
