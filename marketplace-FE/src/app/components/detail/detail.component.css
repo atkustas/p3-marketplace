@@ -43,6 +43,8 @@
     
     width: 200px;
 
+    background-color: #F0F0F0;
+
     border-right: 1px solid rgb(58, 56, 56);
 
     height: 3000px;
@@ -56,4 +58,10 @@
 .active{
     
     text-decoration: underline #981E32;
+}
+
+.btn-light{
+    background-color: #981E32 !important;
+    color:#faf8f8de;
+    
 }
