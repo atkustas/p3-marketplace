@@ -32,6 +32,10 @@ const routes: Routes = [
     path: "product",
     component: ProductmenuComponent
   },
+  {
+    path: "cart/product",
+    component: ProductmenuComponent
+  },
 
   {
     path: "checkout",
