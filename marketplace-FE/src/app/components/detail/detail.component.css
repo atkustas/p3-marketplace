@@ -36,6 +36,9 @@
     background-color: #F0F0F0;
     border-right: 1px solid rgb(58, 56, 56);
     height: 3000px;
+    position: fixed;
+    top: 82px;
+    z-index: 100;
 }
 
 .content .right{

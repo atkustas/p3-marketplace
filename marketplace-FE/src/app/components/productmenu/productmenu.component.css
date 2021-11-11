@@ -17,9 +17,7 @@
  .container{
      align-items: end;
      justify-content: end;
-
      margin-top: 2px;
-      
  }
 
  a {
@@ -31,8 +29,6 @@
       background-color:rgba(48, 44, 42, 0.952);
       float: left;
       height: 100vh;
-      
-     
   }
 
   
