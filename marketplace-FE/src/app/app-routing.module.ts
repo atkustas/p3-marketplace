@@ -9,6 +9,7 @@ import { ProductmenuComponent } from './components/productmenu/productmenu.compo
 import { IntroductionComponent } from './components/detail/introduction/introduction.component';
 import { VerificationComponent } from './components/detail/verification/verification.component';
 import { HomeComponent } from './components/home/home.component';
+import { TermsComponent } from './terms/terms.component';
 
 const routes: Routes = [
   {
@@ -45,6 +46,11 @@ const routes: Routes = [
   {
     path: "cart/checkout",
     component: CheckoutComponent
+  },
+
+  {
+    path: "terms",
+    component: TermsComponent
   },
 
   { path: "login",
