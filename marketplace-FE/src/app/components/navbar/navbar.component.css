@@ -1,9 +1,10 @@
 .navbar{
-    background-color: #981E32;
+    background-color: #a80a35;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 100;
+    padding: 19px;
 }
 
 .nav-link{
@@ -15,8 +16,8 @@
 }
 
 .navbar img{
-    height: 50px;
-    width: 80px;
+    height: 40px;
+    width: 156px;
 }
 #navbarSupportedContent{
     float: left;
