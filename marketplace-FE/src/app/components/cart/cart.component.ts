@@ -61,23 +61,13 @@ export class CartComponent implements OnInit {
   ngOnInit(): void {
     let apiString:any = localStorage.getItem("api");
     let api:ApiProduct = JSON.parse(apiString);
-    console.log(api);
 
     this.id = this.route.snapshot.paramMap.get('id');
-    console.log(this.id);
-    console.log(this.plans);
-    console.log(typeof this.id);
-    // this.plan = this.plans.this.id.plan;
-    // this.price = this.plans.this.id.price;
 
     for(let index of this.plans){
       if(index.id == this.id){
         this.plan = index.plan;
         this.price = index.price;
-
-    console.log("the id is: " +this.id);
-    console.log("the plan is: " +this.plan);
-    console.log("the price is: " +this.price);
       }
     }
 

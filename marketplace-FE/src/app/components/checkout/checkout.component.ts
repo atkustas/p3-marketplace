@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
-import { ApigeeApiService } from 'src/app/services/apigee-api.service';
+import { ApiProduct } from 'src/app/models/api-product';
 
 @Component({
   selector: 'app-checkout',
@@ -16,7 +15,10 @@ export class CheckoutComponent implements OnInit {
   plan:any;
   price:any;
 
-  constructor(private api: ApigeeApiService , private route: ActivatedRoute) {
+  apiString:any = localStorage.getItem("api");
+  api:any = JSON.parse(this.apiString);
+
+  constructor(private route: ActivatedRoute) {
 
     this.plans = [{id:1,
       plan:"Starter",
@@ -34,10 +36,13 @@ export class CheckoutComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.api.createDeveloper().subscribe(
-      (res: any) => 
-        console.log(res)
-    )
+    // this.api.createDeveloper().subscribe(
+    //   (res: any) => 
+    //     console.log(res)
+    // )
+
+    let apiString:any = localStorage.getItem("api");
+    let api:ApiProduct = JSON.parse(apiString);
 
     this.id = this.route.snapshot.paramMap.get('id');
     console.log(this.id);
@@ -49,11 +54,11 @@ export class CheckoutComponent implements OnInit {
         this.plan = index.plan;
         this.price = index.price;
 
-    console.log("the Id is: " +this.id);
+      }
+    
+    console.log("the id is: " +this.id);
     console.log("the plan is: " +this.plan);
     console.log("the price is: " +this.price);
-
-      }
 
   }}
 
