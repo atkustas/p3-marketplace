@@ -12,4 +12,6 @@ export class CartComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //get info from the card component selected (either hellodetail, welcomedetail, hello2detail)
+
 }

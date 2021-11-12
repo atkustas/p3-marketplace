@@ -2,10 +2,9 @@
     background-color: #a80a35;
     width: 100%;
     position: fixed;
-    top: 0;
-    padding: 19px;
-    box-shadow: 2px 2px 4px rgb(37, 37, 37);
-    z-index: 100;
+    bottom: 0;
+    z-index: 2;
+    padding: 6px;
 }
 
 .nav-link{
@@ -17,13 +16,12 @@
 }
 
 .navbar img{
-    height: 45px;
-    width: 179px;
-    margin-left: 60px;
+    height: 40px;
+    width: 156px;
 }
 #navbarSupportedContent{
     float: left;
-    justify-content: end !important;
+    justify-content: center !important;
 }
 
 .dropdown-menu{
@@ -31,11 +29,7 @@
 }
 
 .nav-item a{
-    color: #F0F0F0;
+    color: #F0F0F099 !important;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
 }
-
-/* #navbarsExampleDefault{
-    z-index: -100;
-} */

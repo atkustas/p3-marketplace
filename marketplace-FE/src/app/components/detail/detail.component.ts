@@ -12,4 +12,9 @@ export class DetailComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  itemadded(){
+    alert("Item added to Cart");
+  }
+
+
 }
