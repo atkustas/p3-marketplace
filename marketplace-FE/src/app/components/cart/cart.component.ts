@@ -76,11 +76,6 @@ export class CartComponent implements OnInit {
       }
     }
 
-    
-
-    this.product = localStorage.getItem('api');
-
-    console.log(this.product);
 
 
     
