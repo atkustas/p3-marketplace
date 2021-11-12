@@ -13,6 +13,11 @@ export class CartComponent implements OnInit {
   id:any;
   plan:any;
   price:any;
+  product:any;
+  picture:any;
+
+  // apiString:any = localStorage.getItem("api");
+  // api:any = JSON.parse(this.apiString);
 
   constructor(private route: ActivatedRoute) {
 
@@ -37,6 +42,8 @@ export class CartComponent implements OnInit {
       }
     ]
 
+    
+
     this.plans = [{id:1,
       plan:"Starter",
       price:"9.99"},
@@ -51,7 +58,7 @@ export class CartComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.id = Number(this.route.snapshot.paramMap.get('id'));
+    this.id = this.route.snapshot.paramMap.get('id');
     console.log(this.id);
     console.log(this.plans);
     console.log(typeof this.id);
@@ -59,15 +66,25 @@ export class CartComponent implements OnInit {
     // this.price = this.plans.this.id.price;
 
     for(let index of this.plans){
-      if(index.id = this.id){
+      if(index.id == this.id){
         this.plan = index.plan;
         this.price = index.price;
-      }
-    }
+
+    console.log("the Id is: " +this.id);
     console.log("the plan is: " +this.plan);
     console.log("the price is: " +this.price);
+      }
+    }
+
+    
+
+    this.product = localStorage.getItem('api');
+
+    console.log(this.product);
+
+
+    
   }
 
 
 }
-

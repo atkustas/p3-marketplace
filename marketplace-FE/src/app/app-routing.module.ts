@@ -21,7 +21,6 @@ const routes: Routes = [
     path: "cart",
     component:CartComponent
   },
-
   {
     path: "",
     component: HomeComponent
@@ -45,7 +44,7 @@ const routes: Routes = [
   },
 
   {
-    path: "cart/checkout",
+    path: "cart/checkout/:id",
     component: CheckoutComponent
   },
   {

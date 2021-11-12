@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 import { ApigeeApiService } from 'src/app/services/apigee-api.service';
 
@@ -9,7 +10,27 @@ import { ApigeeApiService } from 'src/app/services/apigee-api.service';
 })
 export class CheckoutComponent implements OnInit {
 
-  constructor(private api: ApigeeApiService) {}
+  info:any;
+  plans:any;
+  id:any;
+  plan:any;
+  price:any;
+
+  constructor(private api: ApigeeApiService , private route: ActivatedRoute) {
+
+    this.plans = [{id:1,
+      plan:"Starter",
+      price:"9.99"},
+    {id:2,
+      plan:"Business",
+      price:"29.99"},
+    {id:3,
+      plan:"Enterprise",
+      price:"49.99"}
+    ]
+
+
+  }
 
   ngOnInit(): void {
 
@@ -17,6 +38,24 @@ export class CheckoutComponent implements OnInit {
       (res: any) => 
         console.log(res)
     )
-  }
+
+    this.id = this.route.snapshot.paramMap.get('id');
+    console.log(this.id);
+    console.log(this.plans);
+    console.log(typeof this.id);
+
+    for(let index of this.plans){
+      if(index.id == this.id){
+        this.plan = index.plan;
+        this.price = index.price;
+
+    console.log("the Id is: " +this.id);
+    console.log("the plan is: " +this.plan);
+    console.log("the price is: " +this.price);
+
+      }
+
+  }}
 
 }
+

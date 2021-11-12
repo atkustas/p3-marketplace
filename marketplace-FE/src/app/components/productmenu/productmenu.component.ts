@@ -21,8 +21,8 @@ export class ProductmenuComponent implements OnInit {
   }
 
   loadDetail(index:number){
-    localStorage.setItem("api",JSON.stringify(this.cs.apis[index]));
-    this.router.navigateByUrl("/detail");
+    localStorage.setItem("api", JSON.stringify(this.cs.apis[index]));
+    this.router.navigateByUrl("/detail/");
 
   }
 
