@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  dropdown: boolean = true;
+
+  public isCollapsed = true;
+
+  public dropdownToggle(){
+    this.dropdown = !this.dropdown;
+  }
   constructor() { }
 
   ngOnInit(): void {

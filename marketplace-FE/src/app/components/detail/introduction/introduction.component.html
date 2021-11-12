@@ -1,0 +1,111 @@
+<div class="container">
+  <div class= "header">
+      <h1>API Introduction</h1>
+  </div>
+
+    <section id="sec1">
+      <h3>Overview</h3>
+      <div class="row">
+        <div class="col-md-8">
+          <p class="text-start">{{api.description}}</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec2">
+  
+      <h2>Functionality</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <ul>
+            <li>{{api.functionality[0]}}</li>
+            <li>{{api.functionality[1]}}</li>
+            <li>{{api.functionality[2]}}</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec3">
+      <h2>API interfaces</h2>
+      <br>
+      <h6>Request methods: GET </h6>
+      <h6>Request url: https://mocktarget.apigee.net </h6>
+      <h6>Request Parameters </h6>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Type</th>
+            <th scope="col">Required</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">user</th>
+            <td>string</td>
+            <td>Yes</td>
+            <td>Your user name</td>
+          </tr>
+        </tbody>
+      </table>
+      <h6>Response information </h6>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Status code</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">200</th>
+            <td>Success</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-md-8">
+          <h4>Success page</h4>
+          <div class="box"> 
+            <img src="assets/helloworldapi/url_suc.png" alt="image">
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <h6>Request methods: GET </h6>
+      <h6>Request url: https://mocktarget.apigee.net/auth </h6>
+      <h6>Request Parameters: No </h6>
+      <h6>Response information </h6>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Status code</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">200</th>
+            <td>Success</td>
+          </tr>
+          <tr>
+            <th scope="row">401</th>
+            <td>Access denied</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-md-8">
+          <h4>Failed page</h4>
+          <div class="box"> 
+            <img src="assets/helloworldapi/url_auth_fail.png" alt="image">
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+      
+      

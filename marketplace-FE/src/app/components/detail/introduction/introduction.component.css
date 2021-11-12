@@ -1,0 +1,26 @@
+.header{
+  padding-top: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.row{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+    border-bottom: 1px solid #ccc;
+    margin-top: 1em;
+}
+  
+section .col-md-3 {
+    border: none;
+}
+  
+section .col-md-3:first-child {
+    border: none;
+}
+
+img { 
+  object-fit: contain;
+}

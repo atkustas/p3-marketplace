@@ -1,0 +1,141 @@
+<!-- <head>
+    <link rel="stylesheet" href="pricing.component.css">
+</head> -->
+<!-- 
+<div class= "container">
+<div class= "pricing">
+    <div class="table-responsive mb-2">
+        <table class="table table-sm table-borderless">
+          <tbody>
+            <tr>
+              <td class="pl-0 pb-0 w-25">Quantity:</td>
+            </tr>
+            <tr>
+              <td class="pl-0">
+                <div class="def-number-input number-input safari_only mb-0">
+                  <input class="quantity" min="0" name="quantity" value="1" type="number">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <fieldset class="form-group" id = "reimb_type_id">
+        <label for="reimb_type">Choose the Right Plan For You：</label>
+        <br> 
+        <div class="form-check" >
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="reimb_type_id" id="reimb_type_id" value="1" checked>
+                $0.00 250 Requests/month </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="reimb_type_id" id="reimb_type_id" value="2">
+                $10.00 12,500 Requests/month </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="reimb_type_id" id="reimb_type_id" value="3">
+                $30.00 50,000 Requests/month </label>
+        </div>
+    </fieldset>
+</div>
+</div> -->
+<section id="pricing" class="bg-white">
+    <div class="container">
+        <h2 class="text-center"></h2>
+        <div class="spacer spacer-line border-primary">&nbsp;</div>
+        <div class="spacer">&nbsp;</div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="pricing-table">
+                    <div class="pricing-table-title">
+                        <h5 class="pricing-title bg-info-hover text-white">STARTER</h5>
+                    </div>
+                    <div class="pricing-table-price text-center bg-info">
+                        <p class="title-font">
+                            <span class="pricing-period text-white mr-1">From</span>
+                            <span class="pricing-currency text-white">$</span>
+                            <span class="pricing-price text-white">9.99</span>
+                            <span class="pricing-period text-white">/ Mo.</span>
+                        </p>
+                    </div>
+                    <div class="pricing-table-content">
+                        <ul>
+                            <li><strong>Basic Package</strong></li>
+                            <li><strong>1 User</strong></li>
+                            <li><strong>Up to 100K API Calls</strong></li>
+                            <li><strong>Business Start</strong></li>
+                            <li><strong><del>Professional Features</del></strong></li>
+                            <li><strong>24/7 Support</strong></li>
+                        </ul>
+                        <div class="pricing-table-button">
+                            <a [routerLink] = "[ '/cart/1' ]" class="btn submit" role="button" >Add To Cart</a>
+                            <!-- <button class="btn submit" routerLink= "/cart"><span>Add To Cart</span></button> -->
+                        </div><!-- / pricing-table-button -->
+                    </div><!-- / pricing-table-content -->
+                </div><!-- / pricing-table -->
+            </div><!-- / column -->
+
+           <div class="col-md-4">
+                <div class="pricing-table bg-lightgrey">
+                    <div class="pricing-table-title">
+                        <h5 class="pricing-title bg-primary-hover text-white">BUSINESS</h5>
+                    </div>
+                    <div class="pricing-table-price text-center bg-primary">
+                        <p class="title-font">
+                            <span class="pricing-period text-white mr-1">From</span>
+                            <span class="pricing-currency text-white">$</span>
+                            <span class="pricing-price text-white">29.99</span>
+                            <span class="pricing-period text-white">/ Mo.</span>
+                        </p>
+                    </div>
+                    <div class="pricing-table-content">
+                        <ul>
+                            <li><strong>Management Package</strong></li>
+                            <li><strong>Up To 10 Users</strong></li>
+                            <li><strong>Up to 350K API Calls</strong></li>
+                            <li><strong>Business Professional</strong></li>
+                            <li><strong>Professional Features</strong></li>
+                            <li><strong>24/7 Support</strong></li>
+                        </ul>
+                        <div class="pricing-table-button">
+                            <a [routerLink] = "[ '/cart/2' ]" class="btn submit" role="button" >Add To Cart</a>
+                            <!-- <button class="btn submit" (click)= "itemAdded()" routerLink= "/cart"><span>Add To Cart</span></button> -->
+                        </div><!-- / pricing-table-button -->
+                    </div><!-- / pricing-table-content -->
+                </div><!-- / pricing-table -->
+            </div><!-- / column -->
+
+            <div class="col-md-4">
+                <div class="pricing-table">
+                    <div class="pricing-table-title">
+                        <h5 class="pricing-title bg-info-hover text-white">ENTERPRISE</h5>
+                    </div>
+                    <div class="pricing-table-price text-center bg-info">
+                        <p class="title-font">
+                            <span class="pricing-period text-white mr-1">From</span>
+                            <span class="pricing-currency text-white">$</span>
+                            <span class="pricing-price text-white">49.99</span>
+                            <span class="pricing-period text-white">/ Mo.</span>
+                        </p>
+                    </div>
+                    <div class="pricing-table-content">
+                        <ul>
+                            <li><strong>Business Package</strong></li>
+                            <li><strong>Up to 100 Users</strong></li>
+                            <li><strong>Up to 1M API Calls</strong></li>
+                            <li><strong>Enterprise Professional</strong></li>
+                            <li><strong>Professional Features</strong></li>
+                            <li><strong>24/7 Support</strong></li>
+                        </ul>
+                        <div class="pricing-table-button">
+                            <a [routerLink] = "[ '/cart/3' ]" class="btn submit" role="button" >Add To Cart</a>
+                            <!-- <button class="btn submit" (click)= "itemAdded()" routerLink= "/cart"><span>Add To Cart</span></button> -->
+                        </div><!-- / pricing-table-button -->
+                    </div><!-- / pricing-table-content -->
+                </div><!-- / pricing-table -->
+            </div><!-- / column -->
+        </div><!-- / row -->
+    </div><!-- / container -->
+</section>
