@@ -14,19 +14,19 @@ export class CartService {
       {
         price:500,
         description:"A simple hello world API",
-        functionality:["foo", "bar", "baz"],
+        functionality:["Make calls to the Hello World API", "Check authorization", "Receive custom greetings"],
         image:"assets/helloworld.png"
       },
       {
         price:250,
-        description:"placeholder",
-        functionality:["foo", "bar", "baz"],
+        description:"A Hello World API deployed to Google App Engine",
+        functionality:["Make calls to the Hello World API", "placeholder", "placeholder"],
         image:"assets/hello.png"
       },
       {
         price:100,
-        description:"placeholder",
-        functionality:["foo", "bar", "baz"],
+        description:"A Welcome API deployed to Google Cloud Functions",
+        functionality:["Make calls to the Welcome API", "placeholder", "placeholder"],
         image:"assets/welcome.png"
       }
     ]

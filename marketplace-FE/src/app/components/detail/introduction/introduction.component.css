@@ -1,15 +1,19 @@
+.header{
+  padding-top: 20px;
+}
+
 section {
     border-bottom: 1px solid #ccc;
     margin-top: 1em;
-  }
+}
   
-  section .col-md-3 {
+section .col-md-3 {
     border: none;
-  }
+}
   
-  section .col-md-3:first-child {
+section .col-md-3:first-child {
     border: none;
-  }
+}
 
 img { 
   object-fit: contain;
