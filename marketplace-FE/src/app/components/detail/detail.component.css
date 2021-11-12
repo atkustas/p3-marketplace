@@ -38,7 +38,7 @@
     height: 3000px;
     position: fixed;
     top: 82px;
-    z-index: 100;
+    z-index: 1;
 }
 
 .content .right{
@@ -55,6 +55,15 @@
     font-weight: 500;
     font-size: 16px;
     border-radius: 12px;
+}
+
+.btn{
+    height: 60px;
+    width: 160px;
+}
+
+div a{
+    padding-top: 15px;
 }
 
 @media (max-width: 1000px){

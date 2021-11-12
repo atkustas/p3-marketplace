@@ -19,6 +19,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { Navbar2Component } from './components/navbar2/navbar2.component';
 import { ConditionsComponent } from './components/conditions/conditions.component';
+import { PricingComponent } from './components/detail/pricing/pricing.component';
 
 const googleLoginOptions = {
   scope: 'https://www.googleapis.com/auth/cloud-platform'
@@ -36,7 +37,8 @@ const googleLoginOptions = {
     VerificationComponent,
     HomeComponent,
     Navbar2Component,
-    ConditionsComponent
+    ConditionsComponent,
+    PricingComponent
   ],
   imports: [
     BrowserModule,

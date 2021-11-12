@@ -10,6 +10,7 @@ import { IntroductionComponent } from './components/detail/introduction/introduc
 import { VerificationComponent } from './components/detail/verification/verification.component';
 import { HomeComponent } from './components/home/home.component';
 import { ConditionsComponent } from './components/conditions/conditions.component';
+import { PricingComponent } from './components/detail/pricing/pricing.component';
 
 const routes: Routes = [
   {
@@ -67,12 +68,16 @@ const routes: Routes = [
       {
         path: "verification",
         component: VerificationComponent
-      }
-      ,
+      },
+      {
+        path: "pricing",
+        component: PricingComponent
+      },
       {
         path: "**",
         redirectTo: 'introduction'
-      }
+      },
+     
     ]
   },
   {

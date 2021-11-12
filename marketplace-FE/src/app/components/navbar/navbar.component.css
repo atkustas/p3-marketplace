@@ -3,8 +3,9 @@
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 100;
     padding: 19px;
+    box-shadow: 2px 2px 4px rgb(37, 37, 37);
+    z-index: 100;
 }
 
 .nav-link{
