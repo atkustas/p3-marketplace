@@ -10,60 +10,23 @@
         <div class="col text-center btn">   
             <a [routerLink] = "[ '/detail/verification' ]" class="btn btn-light" role="button" >How To Use</a>
         </div>
+
         <br>
         <br>
+
         <div class="col text-center btn">
             <a href="https://javagcp210907-ak-marketplace.apigee.io/docs/hello-world/1/overview" class="btn btn-light" role="button" >&nbsp; &nbsp; &nbsp; Test API&nbsp; &nbsp; &nbsp; </a>
         </div>
-        
         <br>
-        <div class="table-responsive mb-2">
-            <table class="table table-sm table-borderless">
-              <tbody>
-                <tr>
-                  <td class="pl-0 pb-0 w-25">Quantity:</td>
-                </tr>
-                <tr>
-                  <td class="pl-0">
-                    <div class="def-number-input number-input safari_only mb-0">
-                      <input class="quantity" min="0" name="quantity" value="1" type="number">
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <fieldset class="form-group" id = "reimb_type_id">
-            <label for="reimb_type">Choose the Right Plan For You：</label>
-            <br> 
-            <div class="form-check" >
-                <label class="form-check-label">
-                     <input type="radio" class="form-check-input" name="reimb_type_id" id="reimb_type_id" value="1" checked>
-                     $0.00 250 Requests/month </label>
-            </div>
-            <div class="form-check">
-                <label class="form-check-label">
-                     <input type="radio" class="form-check-input" name="reimb_type_id" id="reimb_type_id" value="2">
-                     $10.00 12,500 Requests/month </label>
-            </div>
-            <div class="form-check">
-                <label class="form-check-label">
-                     <input type="radio" class="form-check-input" name="reimb_type_id" id="reimb_type_id" value="3">
-                     $30.00 50,000 Requests/month </label>
-            </div>
-        </fieldset>
         <br>
-        <div class="col text-center">
-            <button class="btn btn-light" role="button">&nbsp;&nbsp;Add to Cart&nbsp;&nbsp; </button>
         <div class="col text-center btn">
-            <button class="btn btn-light" role="button" (click)= "itemadded()" >&nbsp;&nbsp;Add to Cart&nbsp;&nbsp; </button>
-
-        </div>
+            <a [routerLink] = "[ '/detail/pricing' ]" class="btn btn-light" role="button" >Pricing</a>
+        </div>        
     </div>
 
     <div class = "right">
         <router-outlet></router-outlet>
     </div>
-</div>
+
 
 
