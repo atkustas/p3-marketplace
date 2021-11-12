@@ -1,3 +1,23 @@
+.header{
+  padding-top: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-start{
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.list{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.alert{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
 section {
     border-bottom: 1px solid #ccc;
     margin-top: 1em;
