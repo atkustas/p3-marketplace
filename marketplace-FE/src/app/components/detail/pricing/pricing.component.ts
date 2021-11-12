@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-pricing',
@@ -12,8 +13,6 @@ export class PricingComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  itemadded(){
-    alert("Item added to Cart");
-  }
+  
 
 }
