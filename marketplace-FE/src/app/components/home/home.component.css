@@ -73,6 +73,7 @@ p{
     position: relative;
     font-weight: 1200;
     margin-top: 30px;
+    margin-bottom: 200px;
     background: hsla(0, 0%, 94%, 0.479);
     border: 1px #a80a342a solid;
     z-index: 1;
