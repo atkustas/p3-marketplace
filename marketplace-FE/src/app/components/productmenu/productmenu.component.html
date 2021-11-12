@@ -6,7 +6,8 @@
 </div>
    
    <div class="container col-10">
-   <div routerLink= "/detail" class="card" style="width: 18rem;">
+   <!--<div routerLink= "/detail" class="card" style="width: 18rem;">-->
+     <div class="card" style="width: 18rem;" (click) = "loadDetail(0)">
      <a> <img class="card-img-top" src="assets/helloworld.png" alt="Card image cap">
       <div class="card-body">
         <h5>Hello World</h5>
@@ -14,7 +15,7 @@
       </div>
     </a>
    </div>  
-   <div routerLink= "/detail" class="card" style="width: 18rem;">
+   <div class="card" style="width: 18rem;" (click) = loadDetail(1)>
     <a> <img class="card-img-top" src="assets/hello.png" alt="Card image cap">
       <div class="card-body">
         <h5>Hello World - Deployed</h5>
@@ -22,7 +23,7 @@
       </div>
     </a>
   </div>
-    <div routerLink= "/detail" class="card" style="width: 18rem;">
+    <div class="card" style="width: 18rem;" (click) = loadDetail(2)>
       <a> <img class="card-img-top" src="assets/welcome.jpg" alt="Card image cap">
         <div class="card-body">
           <h5>Welcome</h5>
