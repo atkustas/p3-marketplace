@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ApiProduct } from 'src/app/models/api-product';
 
 @Component({
   selector: 'app-cart',
@@ -13,11 +14,10 @@ export class CartComponent implements OnInit {
   id:any;
   plan:any;
   price:any;
-  product:any;
-  picture:any;
+  productName:any;
 
-  // apiString:any = localStorage.getItem("api");
-  // api:any = JSON.parse(this.apiString);
+  apiString:any = localStorage.getItem("api");
+  api:any = JSON.parse(this.apiString);
 
   constructor(private route: ActivatedRoute) {
 
@@ -57,7 +57,12 @@ export class CartComponent implements OnInit {
 
   }
 
+
   ngOnInit(): void {
+    let apiString:any = localStorage.getItem("api");
+    let api:ApiProduct = JSON.parse(apiString);
+    console.log(api);
+
     this.id = this.route.snapshot.paramMap.get('id');
     console.log(this.id);
     console.log(this.plans);
@@ -70,7 +75,7 @@ export class CartComponent implements OnInit {
         this.plan = index.plan;
         this.price = index.price;
 
-    console.log("the Id is: " +this.id);
+    console.log("the id is: " +this.id);
     console.log("the plan is: " +this.plan);
     console.log("the price is: " +this.price);
       }
@@ -78,10 +83,6 @@ export class CartComponent implements OnInit {
 
     
   }
-
-
-    
-  
 
 
 }

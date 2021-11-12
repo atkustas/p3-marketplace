@@ -30,7 +30,7 @@ export class CartService {
         productName: "Welcome",
         description:"A Welcome API deployed to Google Cloud Functions",
         functionality:["Make calls to the Welcome API", "placeholder", "placeholder"],
-        image:"assets/welcome.png"
+        image:"assets/welcome.jpg"
       }
     ]
    }
