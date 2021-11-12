@@ -51,7 +51,7 @@ export class CartComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.id = Number(this.route.snapshot.paramMap.get('id'));
+    this.id = this.route.snapshot.paramMap.get('id');
     console.log(this.id);
     console.log(this.plans);
     console.log(typeof this.id);
@@ -59,13 +59,17 @@ export class CartComponent implements OnInit {
     // this.price = this.plans.this.id.price;
 
     for(let index of this.plans){
-      if(index.id = this.id){
+      if(index.id == this.id){
         this.plan = index.plan;
         this.price = index.price;
-      }
-    }
+
+    console.log("the Id is: " +this.id);
     console.log("the plan is: " +this.plan);
     console.log("the price is: " +this.price);
+      }
+    }
+
+    
   }
 
 
